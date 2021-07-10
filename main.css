@@ -1,0 +1,28 @@
+body {
+    background-image: url('img/pokemon-bg.jpg');
+    background-size: cover;
+    background-position-y: 20%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#imagen {
+    border: solid black 5px;
+    display: inline-block;
+    background-color: azure;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+
+    color: white;
+    background-color: black;
+
+
+    margin-top: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
