@@ -7,22 +7,35 @@
     <title>Pokemon Random</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="main.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <link href="favicon/favicon.ico" rel="icon" type="image/x-icon" />
     <script src='main.js'></script>
 </head>
 
 <body>
-    <h1>Pokémon</h1>
-
-    <div id="nombre"></div>
-    <div>
-        <img id="imagen">
+    <div class="container">
+        <div class="card">
+            <div id="card-background" class="card-header">
+                <div id="title">
+                    <h2 id="name"></h2>
+                    <span id="poke-id"></>
+                </div>
+                <img id="imagen">
+            </div>
+            <div class="card-body">
+                <div id="poke-type"></div>
+                <span id="abilities"></span>
+                <span id="weight"></span>
+                <span id="height"></h5>
+                    </p>
+            </div>
+        </div>
     </div>
-    <br>
-    <button onclick="obtenerPokemon()">Elegir Nuevo Pokemon</button>
+    <button onclick="obtenerPokemon()">Nuevo Pokemon</button>
 </body>
 
 </html>

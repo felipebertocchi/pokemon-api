@@ -1,28 +1,115 @@
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#poke-id {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+#name {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+#height, #weight {
+    text-transform: none;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    background-color: #f7f8fc;
+    font-family: 'Lato', sans-serif;
+    color: #10182f;
+
     background-image: url('img/pokemon-bg.jpg');
     background-size: cover;
     background-position-y: 20%;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    text-transform: capitalize;
 }
 
-#imagen {
-    border: solid black 5px;
-    display: inline-block;
-    background-color: azure;
+span {
+    margin: 10px 0;
 }
 
 button {
-    font-family: 'Press Start 2P', cursive;
     font-size: 16px;
 
-    color: white;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
     background-color: black;
 
-
-    margin-top: 50px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+.container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-header img {
+    width: 70%;
+    object-fit: cover;
+    margin-bottom: -40px;
+    align-self: center;
+}
+
+.card-header {
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.3)
+    );
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+    border-radius: 20px;
+
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 4px;
+    color: #fff;
+    padding: 3px 10px;
+    
+    cursor: pointer;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
 }
